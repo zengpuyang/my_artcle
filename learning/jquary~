@@ -1,0 +1,85 @@
+1.语法
+
+	$(this).hide() - 隐藏当前元素
+
+	$("p").hide() - 隐藏所有段落
+
+	$("p .test").hide() - 隐藏所有 class="test" 的段落
+
+	$("#test").hide() - 隐藏所有 id="test" 的元素
+
+	$('#text').text('替换的内容')
+
+	$('.feature').parent() - class所有的父节点
+
+	$("#tours > li") , $("#tours").children() , $("#tours li") , $("#tours").find('li')
+
+	$("#text li").last().prev() - 倒数第二个
+
+	$("div").remove(".hello") - 移除
+
+	$("button").on('click',function(){}）
+		$(selector).on(event,childSelector,data,function,map)
+		on() 方法在被选元素及子元素上添加一个或多个事件处理程序。
+		注意：使用 on() 方法添加的事件处理程序适用于当前及未来的元素（比如由脚本创建的新元素）。
+		提示：如需移除事件处理程序，使用 off() 方法。
+		提示：如需添加只运行一次的事件然后移除，使用 one() 方法。
+
+	$( ".inner" ).before( "<p>Test</p>" )
+		<p>Test</p>
+		<div class="inner">Hello</div>
+		<p>Test</p>
+		<div class="inner">Goodbye</div>
+
+	$( ".inner" ).append( "<p>Test</p>" )
+		<div class="inner">
+		  Hello
+		  <p>Test</p>
+		</div>
+		<div class="inner">
+		  Goodbye
+		  <p>Test</p>
+		</div>
+
+
+	$(document).ready(function(){
+
+	   // jQuery methods go here...
+
+	});
+	这是为了防止文档在完全加载（就绪）之前运行 jQuery 代码。如果在文档没有完全加载之前就运行函数，操作可能失败。
+
+		$(document).ready(function(){
+		  $("button").on("click", function(){
+    		var message = $("<span>Call 1-555-jquery-air to book this tour</span>");
+		    $(this).after(message);
+		    $(this).remove();
+		  });
+		});
+
+2.选择器
+
+	$("*")	选取所有元素
+
+	$(this)	选取当前 HTML 元素
+
+	$("p.intro")	选取 class 为 intro 的 <p> 元素
+
+	$("p:first")	选取第一个 <p> 元素
+
+	$("ul li:first")	选取第一个 <ul> 元素的第一个 <li> 元素
+
+	$("ul li:first-child")	选取每个 <ul> 元素的第一个 <li> 元素
+
+	$("[href]")	选取带有 href 属性的元素	在线实例
+
+	$("a[target='_blank']")	选取所有 target 属性值等于 "_blank" 的 <a> 元素
+
+	$("a[target!='_blank']")	选取所有 target 属性值不等于 "_blank" 的 <a> 元素
+
+	$(":button")	选取所有 type="button" 的 <input> 元素 和 <button> 元素
+
+	$("tr:even")	选取偶数位置的 <tr> 元素
+
+	$("tr:odd")	选取奇数位置的 <tr> 元素
+
