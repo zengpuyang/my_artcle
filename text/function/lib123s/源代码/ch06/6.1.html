@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+       form{
+           border: 2px solid #ff0000;
+       }
+    </style>
+</head>
+<body>
+<form action="../../jasmine-2.0.1/天远.jpg" name="1111">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下面是输入用户登陆信息<br>
+用户名称<br>
+<input type="text" name="user" size="5" maxlength="12" min="5" value="abc"><br>
+备注<br>
+<textarea name="yourworks" cols="10" rows="3" ></textarea><br>
+用户密码<br>
+<input type="password" name="password" required="123456"><br>
+    <input type="radio" name="choese" value="1">1<br>
+    <input type="radio" name="choese" value="2">2<br>
+    <input type="radio" name="choese" value="3">3<br>
+    <hr>
+    <input type="checkbox" name="have" value="4">4
+    <input type="checkbox" name="have" value="5">5
+    <input type="checkbox" name="have" value="6">6
+    <hr>
+    <select name="role" size="3" multiple>
+        <option value="7">7
+        <option value="8">8
+        <option value="9">9
+        <option value="10">10
+    </select>
+    <hr>
+        目标<input type="text" id="field1" value="ѧϰ�ļ"><br/>
+        结果<input type="text" id="field2"><br/>
+        <input type="button" name="normal" value="复制" onClick="document.getElementById('field2').value=document.getElementById('field1').value">
+    <hr>
+    输入网址<input type="url" name="useurl1"><br>
+    输入邮箱地址<input type="email" name="useemail1"><br>
+    时间<input type="datetime" name="date1" multiple="true"><br>    <!--time,month,week,datetime,datetime-local-->
+    次数<input type="number" name="shuzhi1"><br>
+    滚动条<input type="range" name="ran1" min="10" max="50">
+    <hr>
+    <input type="submit" value="确认"><br>
+    <input type="reset" value="重置">
+</form>
+</body>
+</html>

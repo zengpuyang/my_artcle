@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>美化下来菜单</title>
+<style>
+<!--
+.blue{
+	background-color:#7598FB;
+	color: #000000;
+               font-size:15px;
+               font-weight:bolder;
+               font-family:"幼圆"; 
+}
+.red{
+	background-color:#E20A0A;
+	color: #ffffff;
+              font-size:15px;
+               font-weight:bolder;
+               font-family:"幼圆"; 
+}
+.yellow{
+	background-color:#FFFF6F;
+	color: #000000;
+               font-size:15px;
+               font-weight:bolder;
+               font-family:"幼圆"; 
+}
+.orange{
+	background-color:orange;
+	color:#000000;
+              font-size:15px;
+               font-weight:bolder;
+               font-family:"幼圆"; 
+}
+
+-->
+</style>
+   </head>
+<body>
+<form method="post">
+	<p><label for="color">选择暴雨预警信号级别:</label>
+	<select name="color" id="color">
+		<option value="">请选择</option>
+		<option value="blue" class="blue">暴雨蓝色预警信号</option>		
+		<option value="yellow" class="yellow">暴雨黄色预警信号</option>
+		<option value="orange" class="orange">暴雨橙色预警信号</option>
+                             <option value="red" class="red">暴雨红色预警信号</option>
+	</select></p>
+	<p><input type="submit" value="提交"></p>
+</form>
+</body>
+</html>

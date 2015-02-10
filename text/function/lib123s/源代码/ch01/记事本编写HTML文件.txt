@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>第一个网页</title>
+</head>
+<body>
+  xx今天我编写了第一个简单网页，感觉非常高兴。
+</body>
+</html>

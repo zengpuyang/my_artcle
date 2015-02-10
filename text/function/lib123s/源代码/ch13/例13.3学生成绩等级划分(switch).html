@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>学生成绩等级划分</title>
+<script>
+function Verdict(){
+	var Score = parseInt(document.myForm.txtScore.value/10); //将输入的成绩除以10取整，以缩小判断范围
+    switch(Score){
+		case 10:
+		case 9:alert("优秀");break;
+		case 8:alert("良好");break;
+		case 7:alert("中等"); break;
+		case 6:alert("及格");break;
+		default:alert("不及格");
+	}	
+}
+</script>
+</head>
+<body>
+  <form name="myForm" action="" method="get">
+  <P>
+    <label>成绩：</label><input type="text" name="txtScore" />
+    <input type="button" value="判  断" onClick="Verdict()">
+  </P>
+  </form>
+</body>
+</html>

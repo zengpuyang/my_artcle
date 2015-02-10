@@ -1,0 +1,49 @@
+<HTML>
+<head>
+<style>
+<!--
+input{							/* 所有input标记 */
+	color: #cad9ea;	
+}
+input.txt{						/* 文本框单独设置 */
+	border: 1px inset #cad9ea;
+	background-color: #ADD8E6;
+}
+input.btn{						/* 按钮单独设置 */
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px outset #cad9ea;
+	padding: 1px 2px 1px 2px;
+}
+select{
+	width: 80px;
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px solid #cad9ea;
+}
+textarea{
+	width: 200px;
+	height: 40px;
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px inset #cad9ea;
+}
+-->
+</style>
+</head>
+<BODY>
+<h3>聊天室注册页面</h3>
+<table border="1" width="45%">
+<form method="post">
+<tr><td width="30%">昵称:</td><td><input  class=txt>1－20个字符<div id="qq"></div></td></tr>
+<tr><td>密码:</td><td><input type="password" >长度为6～16位</td></tr>
+<tr><td>确认密码:</td><td><input type="password" ></td></tr>
+<tr><td>真实姓名：</td><td><input name="username1"></td></tr>
+<tr><td>性别:</td><td><select><option>男</option><option>女</option></select></td></tr>
+<tr><td>E-mail地址:</td><td><input value="sohu@sohu.com"></td></tr>
+<tr><td>备注:</td><td><textarea cols=35 rows=10></textarea></td></tr>
+<tr><td><input type="button" value="提交" class=btn /></td><td><input type="reset" value="重填"/></td></tr>
+</form>
+</table>
+</BODY>
+</HTML>

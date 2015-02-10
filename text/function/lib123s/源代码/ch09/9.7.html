@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>隔行变色</title>
+<style>
+h1{font-size:16px;}
+table{
+        width:100%;
+        font-size:12px;
+        table-layout:fixed;
+        empty-cells:show;
+        border-collapse:collapse;
+        margin:0 auto;
+        border:1px solid #cad9ea;
+        color:#666;
+}
+th{
+       height:30px;
+       overflow:hidden;
+}
+td{height:20px;}
+td,th{
+     border:1px solid #cad9ea;
+     padding:0 1em 0;
+}
+tr:nth-child(even){
+         background-color:#f5fafe;
+}
+</style>
+</head>
+<body>
+<h1>设计优雅数据表格</h1>
+<table border=1>
+<tr>
+<th>排名</th>
+<th>姓名</th>
+<th>总分</th>
+<th>语文</th>
+<th>数学</th>
+</tr>
+<tr><td>1</td><td>孔  宇</td><td>180</td><td>91</td><td>89</td></tr>
+<tr><td>2</td><td>曹圆新</td><td>176</td><td>76</td><td>100</td></tr>
+<tr><td>3</td><td>史雅琪</td><td>168</td><td>83</td><td>85</td></tr>
+<tr><td>4</td><td>曹秀英</td><td>153</td><td>73</td><td>80</td></tr>
+<tr><td>5</td><td>杨  青</td><td>146</td><td>70</td><td>76</td></tr>
+</table>
+</body>
+</html>

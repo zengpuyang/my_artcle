@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>银行汇款手续费</title>
+<style>
+label{
+	width:100px;
+	text-align:right;
+	display:block;
+	float:left;
+}
+section{
+	width:260px;
+	text-align:center;
+}
+</style>
+<script>
+function calc(){
+	var Remittance = document.myForm.txtRemittance.value;//将输入的汇款金额赋值给变量
+    var Fee = Remittance * 0.01;      //计算汇款手续费
+    if (Fee < 2)
+    {
+        Fee = 2;    //小于2元时，手续费为2元
+    }
+    document.myForm.txtFee.value = Fee; 
+}
+</script>
+</head>
+<body>
+<section>
+  <form name="myForm" action="" method="get">
+    <P><label>汇款金额：</label><input type="text" name="txtRemittance" /></P>
+    <p><label>手续费：</label><input type="text" name="txtFee" readonly/></p>
+    <p><input type="button" value="确  定" onClick="calc()"></p>
+  </form>
+</scetion>
+</body>
+</html>
+

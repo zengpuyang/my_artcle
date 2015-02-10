@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>绘制坐标变换</title>
+<script>
+	function draw(id)
+	{
+		var canvas=document.getElementById(id);
+		if(canvas==null)
+		return false;
+		var context=canvas.getContext('2d');
+		context.fillStyle="#eeeeff";
+		context.fillRect(0,0,400,300);
+		context.translate(200,50);
+		context.fillStyle='rgba(255,0,0,0.25)';
+		for(var i=0;i<50;i++){
+			context.translate(25,25);
+			context.fillRect(0,0,100,50);
+		}		
+	}
+</script>
+</head>
+<body onload="draw('canvas');">  
+<h1>变换原点坐标</h1>  
+<canvas id="canvas" width="400" height="300" />  
+</body>  
+</html>

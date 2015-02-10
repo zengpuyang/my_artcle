@@ -1,0 +1,94 @@
+1.在控制台输入，在网页输出。
+     document.write('vubi咯屋')
+2.在数组中查找指定*      //从3开始；-2，从倒数第2个开始，找到的最后一个位置。没有返回值为-1。
+     var ar = ["ab", "cd", "ef", "ab", "cd",'cd','ab']
+     ar.indexOf('cd',3)
+     //  4
+3.setInterval与setTimeout
+     var t='ijnihu'
+     setTimeout('console.log(t)',2000)
+       var s='junanj'
+       t=setInterval('console.log(s)', 1000)
+       //   junanj
+       clearInterval(t)
+4.字符串截取
+     t='fggsg'
+     t.substr(2,2)    // "gs"
+5.分割数组
+     "2:3:4:5".split(":")	//将返回["2", "3", "4", "5"]  
+6.二维数组定义
+     var array_1 = new Array()
+     array_1[0] = new Array('a','b','c')
+     array_1[1] = new Array('e','f','g')
+     console.log(array_1[1][1])
+     console.log(array_1[0][1])
+
+     //  f
+     //  b 
+7.取数组inputs的前n个元素做为数组
+     _.first(inputs,n)
+8.查找
+     var characters = [
+     { 'name': 'barney',  'age': 36, 'blocked': true },
+     { 'name': 'fred',    'age': 40, 'blocked': false },
+     { 'name': 'pebbles', 'age': 1,  'blocked': true }
+     ];
+     _.findLastIndex(characters, { 'age': 36 });
+     // → 0   
+9.合并数组中相同的元素
+     _.uniq(['A', 'b', 'C', 'a', 'B', 'c'], function(letter) { return letter.toLowerCase(); });
+     // → ['A', 'b', 'C']
+     _.uniq([1, 2.5, 3, 1.5, 2, 3.5], function(num) { return this.floor(num); }, Math);
+     // → [1, 2.5, 3]
+10.数组元素累加
+     _.reduce([1,2,4,3], function(memo, num){ return memo + num; }, 0);   //10
+     _.reduce([ 'ITEM000003-2','ITEM000003-2','ITEM000003-2'],function(code1,code2){
+        return code1+parseInt(code2.substr(11))
+       },0)    
+     // 6    /*注意return后的格式*/
+11.数组分组
+（1）、var s=[
+            'ITEM000001',
+            'ITEM000001',
+            'ITEM000001',
+            'ITEM000001',
+            'ITEM000001',
+            'ITEM000003-2',
+            'ITEM000005',
+            'ITEM000005',
+            'ITEM000005'
+        ];
+     _.groupBy(s,function(code){
+        return code
+     })
+     // Object {ITEM000001: Array[5], ITEM000003-2: Array[1], ITEM000005: Array[3]
+（2）、var stooges = [
+                    {name: 'moe', age: 40}, 
+                    {name: 'larry', age: 50}, 
+                    {name: 'curly', age: 60}
+                   ];
+     _.indexBy(stooges, 'age');
+     // Object {40: Object, 50: Object, 60: Object}
+12.取样
+    _.sample([1, 2, 3, 4, 5, 6], 4);
+    //[2, 5, 1, 6]  ’4‘取样个数
+13.排序
+    1）、var stooges = [{name: 'curly', age: 25}, {name: 'moe', age: 21}, {name: 'larry', age: 23}];
+         _.sortBy(stooges,function(stooge){ return stooge.age; })      //按age排序
+    2）、_.invoke([[5, 1, 7], [3, 2, 1]], 'sort');  //注意还需在对象添加方括号
+         // [[1, 5, 7], [1, 2, 3]]
+14.取指定位置的元素
+    _.at(['a', 'b', 'c', 'd', 'e'], [0, 2, 4]);
+    // → ['a', 'c', 'e']
+15.wrapped套     //将'_'综合
+    _.chain([1, 2, 3, 4, 5, 6]).filter(function(num){return _.contains([3,4,50],num) }).first().value();
+    //  3        /*注意value后的括号，不要忘了。*/
+16.push 为数组添加元素
+    var sports = ['soccer', 'baseball'];
+    var total = sports.push('football', 'swimming');
+    console.log(sports); // ['soccer', 'baseball', 'football', 'swimming']
+    console.log(total);  // 4
+17.转换为数字型
+    var first = parseInt('1NO', 0, ary);     //=> 1
+    var middle = parseInt('2FOOL', 1, ary);  //=> NaN
+    var last = parseInt('3ME', 2, ary);      //=> NaN

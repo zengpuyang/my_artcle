@@ -1,0 +1,32 @@
+<html>
+   <head>
+     <title>����HTML����</title>
+ <script type="text/javascript">
+ window.onload = function(){ 
+  var zhwHtml = document.documentElement; //ͨ��docuemnt.documentElement��ȡ��ڵ� ==>html
+   alert(zhwHtml.nodeName); //��ӡ�ڵ���� HTML ��д
+   var zhwBody = document.body; //��ȡbody��ǩ�ڵ�
+   alert(zhwBody.nodeName); //��ӡBODY�ڵ�����
+   var fH = zhwBody.firstChild; //��ȡbody�ĵ�һ���ӽڵ�
+  alert(fH+"body�ĵ�һ���ӽڵ�");
+   var lH = zhwBody.lastChild; //��ȡbody�����һ���ӽڵ�
+  alert(lH+"body�����һ���ӽڵ�");
+   var ht = document.getElementById("zhw"); //ͨ��id��ȡ<h1>
+  alert(ht.nodeName);
+  var text = ht.childNodes;
+  alert(text.length);
+  var txt = ht.firstChild;
+  alert(txt.nodeName);
+  alert(txt.nodeValue);
+  alert(ht.innerHTML);
+  alert(ht.innerText+"Text");
+  
+ }
+ </script>
+   </head>  
+  <body>
+     <h1 id="zhw">����һ�����ݽڵ�</h1>
+     <h2>1515121</h2>
+   </body>
+ </html>
+ 
