@@ -82,4 +82,40 @@
 	$("tr:even")	选取偶数位置的 <tr> 元素
 
 	$("tr:odd")	选取奇数位置的 <tr> 元素
+3.杂项方法
+	.data()	方法向被选元素附加数据，或者从被选元素获取数据。
+	.each()	为每个匹配元素执行函数
+	.get()	获取由选择器指定的 DOM 元素
+	.index()	从匹配元素中搜索给定元素
+	$.noConflict()	释放变量 $ 的 jQuery 控制权
+	$.param()	创建数组或对象的序列化表示形式（可在生成 AJAX 请求时用于 URL 查询字符串中）
+	.removeData()	移除之前存放的数据
+	.toArray()	以数组的形式检索所有包含在 jQuery 集合中的所有 DOM 元素
 
+	.find() 方法返回被选元素的后代元素。
+4.
+	.filter() 方法返回符合一定条件的元素。规定一个条件,不符合条件的元素将从选择中移除，符合条件的元素将被返回。
+5.滑动	
+	.slideDown() 方法用于向下滑动元素。$(selector).slideDown(speed,callback)
+	.slideUp() 方法用于向上滑动元素。$(selector).slideUp(speed,callback)
+	.slideToggle() 方法可以在 slideDown() 与 slideUp() 方法之间进行切换。
+		如果元素向下滑动，则 slideToggle() 可向上滑动它们。
+		如果元素向上滑动，则 slideToggle() 可向下滑动它们。
+		$(selector).slideToggle(speed,callback)
+6.事件
+	鼠标事件    键盘事件   表单事件	文档/窗口事件
+	click	    keypress  submit	load
+	dblclick    keydown   change	resize
+	mouseenter  keyup     focus	scroll
+	mouseleave	      blur	unload
+7.Jquary事件方法
+8.css类
+	addClass() - 向被选元素添加一个或多个类  .addClass("intro")
+	removeClass() - 从被选元素删除一个或多个类
+	toggleClass() - 对被选元素进行添加/删除类的切换操作
+	css() - 设置或返回样式属性  
+9.jquery效果-动画
+	$(selector).animate({params},speed,callback);
+	必需的 params 参数定义形成动画的 CSS 属性。
+	可选的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。
+	可选的 callback 参数是动画完成后所执行的函数名称。
