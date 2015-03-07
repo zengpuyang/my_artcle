@@ -92,3 +92,5 @@
     var first = parseInt('1NO', 0, ary);     //=> 1
     var middle = parseInt('2FOOL', 1, ary);  //=> NaN
     var last = parseInt('3ME', 2, ary);      //=> NaN
+18.替换
+    splice() 方法用于插入、删除或替换数组的元素。这种方法会改变原始数组！

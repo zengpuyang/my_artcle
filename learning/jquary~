@@ -95,7 +95,7 @@
 	.find() 方法返回被选元素的后代元素。
 4.
 	.filter() 方法返回符合一定条件的元素。规定一个条件,不符合条件的元素将从选择中移除，符合条件的元素将被返回。
-5.滑动	
+5.jquery效果-滑动	
 	.slideDown() 方法用于向下滑动元素。$(selector).slideDown(speed,callback)
 	.slideUp() 方法用于向上滑动元素。$(selector).slideUp(speed,callback)
 	.slideToggle() 方法可以在 slideDown() 与 slideUp() 方法之间进行切换。
