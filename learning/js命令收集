@@ -69,7 +69,7 @@
                    ];
      _.indexBy(stooges, 'age');
      // Object {40: Object, 50: Object, 60: Object}
-12.取样
+12.随机random
     _.sample([1, 2, 3, 4, 5, 6], 4);
     //[2, 5, 1, 6]  ’4‘取样个数
 13.排序
@@ -94,3 +94,5 @@
     var last = parseInt('3ME', 2, ary);      //=> NaN
 18.替换
     splice() 方法用于插入、删除或替换数组的元素。这种方法会改变原始数组！
+19.去掉数组后面的n个数
+    _.initial(array, [n]) 
